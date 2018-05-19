@@ -1,0 +1,588 @@
+@charset "utf-8";
+
+/* 全体の設定 */
+body
+{
+	margin: 0em; /* 全体の余白 */
+	background-color:white;
+	font-size:11px;
+	scrollbar-face-color: #999999;       /* 表面の色 */
+	scrollbar-3dlight-color: #000000;    /* 左端と上端の色 */
+	scrollbar-highlight-color: #cccccc;  /* ハイライトの色 */
+	scrollbar-shadow-color: #666666;     /* 影の色 */
+	scrollbar-darkshadow-color: #000000; /* 右端と下端 */
+	scrollbar-arrow-color: #ffffff;      /* 矢印の色 */
+	scrollbar-track-color: #000000;      /* バーの背景の色 */
+	overflow: auto;						 /*スクロールバー表示*/
+}
+
+/*共通項目*/
+.commonWidth{
+	width: 950px;
+}
+
+/*ヘッダ*/
+.top
+{
+	color:#000000;
+	background-color:white;
+	font-size:9pt;
+	margin:0px;
+	padding:1px;
+	height:40px;
+	overflow:none;
+	filter:Alpha(Opacity=70,Style=0);
+	border:solid #000000 1px;
+}
+
+/*終了ボタン*/
+*.btn-back
+{
+	width:100px;
+	height:26px;
+	font-size:14px;
+}
+
+*.btn-regular
+{
+	width:100px;
+	height:26px;
+	font-size:14px
+}
+
+*.btn-long
+{
+	width:200px;
+	height:26px;
+	font-size:14px
+}
+
+*.btn-short
+{
+	width:40px;
+	height:26px;
+	font-size:14px
+}
+
+*.btn-fix
+{
+	width:28px;
+	height:26px;
+	font-size:14px
+}
+
+*.btn-scintx
+{
+    width: 28px;
+    height: 26px;
+    font-size: 10px;
+    padding: 0px;
+}
+
+*.btn-wfree
+{
+	height:26px;
+	font-size:14px
+}
+
+*.btn-hidden
+{
+	visibility:hidden;
+	overflow:hidden;
+	width:1px;
+	height:1px;
+	font-size:1px
+}
+
+/*テキストボックス*/
+*.txt-regular
+{
+	height: 23px;
+	width: 203px;
+	font-size: 15px;
+}
+*.txt-short
+{
+	height: 23px;
+	width: 100px;
+	font-size: 15px;
+}
+*.txt-regular-ime-disabled
+{
+	height: 23px;
+	width: 203px;
+	ime-mode: disabled;
+}
+*.txt-time
+{
+	font-family:verdana;
+	margin-top : auto;
+	margin-left : auto;
+	margin-right : auto;
+	margin-bottom : auto;
+	border-style : none none none none;
+	background-color:white;
+	color : black;
+	font-size:18;
+	font-weight: bold;
+}
+
+/*セレクトボックス*/
+*.select-regular
+{
+	font-size:14px;
+	font-family:verdana;
+}
+
+*.select-comment
+{
+	font-size:14px;
+	font-family:verdana;
+	width:480px;
+}
+
+*.select-positive-comment
+{
+	font-size:14px;
+	font-family:verdana;
+	width:220px;
+}
+
+*.select-feedback-comment
+{
+	font-size:14px;
+	font-family:verdana;
+	width:220px;
+}
+
+*.select-catcomment
+{
+	font-size:14px;
+	font-family:verdana;
+	width:520px;
+}
+
+/*テキストエリア*/
+*.comment-lesson
+{
+	width:782px;
+	height:100%;
+	overflow-y:auto;
+	font-family:verdana;
+	font-size: small;
+	color: BLACK;
+}
+*.comment-lesson-new
+{
+	width:380px;
+	height:100%;
+	overflow-y:auto;
+	font-family:verdana;
+	font-size: small;
+	color: BLACK;
+}
+*.notes-lesson
+{
+	width:376px;
+	height:100%;
+	overflow-y:auto;
+	font-family:verdana;
+	font-size: small;
+	color: BLACK;
+}
+*.comment-lesson-2
+{
+	width:630px;
+	height:100%;
+	overflow-y:auto;
+	font-family:verdana;
+	font-size: small;
+	color: BLACK;
+}
+
+*.comment-cat
+{
+	width:540px;
+	font-family:verdana;
+	overflow-y:auto;
+}
+
+/*テーブル*/
+*.table-file
+{
+	width:780px;
+}
+
+*.table-comment
+{
+	width:630px;
+	height:192px
+}
+
+*.table-comment-width
+{
+	width:630px;
+}
+
+*.table-catfile
+{
+	width="720px"
+}
+
+/*DIV*/
+*.div-file
+{
+	height:290px;
+	overflow-y:scroll;
+	width:800px;
+}
+
+*.div-catfile
+{
+	height:290px;
+	overflow-y:scroll;
+	WIDTH: 780px;
+}
+
+*.div-novascorefile
+{
+	height:580px;
+	overflow-y:scroll;
+	WIDTH: 780px;
+}
+
+/*フォント*/
+*.font-large
+{
+	font-family:verdana;
+	font-size: large;
+	color: DARKBLUE;
+	font-weight: bold;
+}
+*.font-regular
+{
+	font-family:verdana;
+	font-size: medium;
+	color: DARKBLUE;
+	font-weight: bold;
+}
+*.font-small
+{
+	font-family:verdana;
+	font-size: small;
+	color: DARKBLUE;
+}
+*.font-small1
+{
+	font-family:verdana;
+	font-size: x-small;
+	color: DARKBLUE;
+}
+
+*.font-blackLarge
+{
+	font-family:verdana;
+	font-size: large;
+	color: BLACK;
+	font-weight: bold;
+}
+*.font-blackRegular
+{
+	font-family:verdana;
+	font-size: medium;
+	color: BLACK;
+	font-weight: bold;
+}
+*.font-blackSmall
+{
+	font-family:verdana;
+	font-size: small;
+	font-weight: bold;
+	color: BLACK;
+}
+*.font-redSmall
+{
+	font-family:verdana;
+	font-size: small;
+	color: RED;
+}
+*.font-blackSmall1
+{
+	font-family:verdana;
+	font-size: x-small;
+	color: BLACK;
+}
+*.font-redSmall1
+{
+	font-family:verdana;
+	font-size: x-small;
+	color: RED;
+}
+
+#pcform{width:900px;}
+.eva{width:400px;float:left;border-style:double;}
+.level{width:300px;float:right;border-style:solid;}
+.save {clear:both;}
+
+.header-Tbl{
+	width:912px;
+}
+
+.div-List
+{
+	height:290px;
+	overflow-y:scroll;
+	width:912px;
+}
+
+.table-List
+{
+	width:894px;
+}
+
+*.eval-detail
+{
+	width:888px;
+	height:192px
+}
+/** positive*/
+.entry-positive-comment
+{
+	font-size:14px;
+	font-family:verdana;
+	width:350px;
+}
+/** feedback*/
+.entry-feedback-comment
+{
+	font-size:14px;
+	font-family:verdana;
+	width:350px;
+}
+*.entry-comment
+{
+	font-size:14px;
+	font-family:verdana;
+	width:750px;
+}
+
+#headerName{
+	width: 250px;
+}
+
+#headerPerf{
+	width: 120px;
+}
+
+#headerNs{
+	width: 60px;
+}
+#headerNs input[type="checkbox"]{
+    vertical-align: sub;
+}
+
+#headerRecommend{
+	width: 530px;
+	text-align: left;
+}
+#headerRecommend input[type="checkbox"],
+#headerRecommend input[type="radio"]{
+    vertical-align: sub;
+}
+
+#headerRecommend .font-blackSmall1,
+#headerNs .font-blackSmall1{
+	margin-left: 10px;
+}
+
+.recommendConfirm{
+	text-align: center;
+}
+
+
+table.carteTable  { border-collapse:collapse; border:1px solid #666666; }
+table.carteTable td { border:1px solid #666666;  }
+table.carteHeaderTable {
+	border-collapse:collapse;
+	border-top:1px solid #666666;
+	border-bottom:0px solid #666666;
+	border-left:1px solid #666666;
+	border-right:1px solid #666666;
+	background-color: white;
+	height: 26px;
+	font-weight: bold;
+}
+table.carteHeaderTable td {
+	border-top:1px solid #666666;
+	border-bottom:0px solid #666666;
+	border-left:1px solid #666666;
+	border-right:1px solid #666666;;
+}
+textarea { resize: vertical; }
+td.dateTD		{ width: 50px; min-width: 50px; max-width: 50px; }
+td.courseTD		{ width: 50px; min-width: 50px; max-width: 50px; }
+td.serviceTD	{ width: 50px; min-width: 50px; max-width: 50px; }
+td.levelTD		{ width: 30px; min-width: 30px; max-width: 30px; }
+td.typeTD		{ width: 50px; min-width: 50px; max-width: 50px; }
+td.nsTD			{ width: 30px; min-width: 30px; max-width: 30px; }
+td.unitTD		{ width: 30px; min-width: 30px; max-width: 30px; }
+td.perfTD		{ width: 30px; min-width: 30px; max-width: 30px; }
+td.caTD			{ width: 30px; min-width: 30px; max-width: 30px; }
+td.accTD		{ width: 30px; min-width: 30px; max-width: 30px; }
+td.vocTD		{ width: 30px; min-width: 30px; max-width: 30px; }
+td.fluTD		{ width: 30px; min-width: 30px; max-width: 30px; }
+td.compTD		{ width: 30px; min-width: 30px; max-width: 30px; }
+td.neTD			{ width: 30px; min-width: 30px; max-width: 30px; }
+td.commentTD	{ width: 220px; min-width: 220px; max-width: 220px; }
+
+@charset "utf-8";
+
+TABLE.mainTable {
+	border: 1px solid #9C9C9C;
+	border-collapse:collapse;
+}
+
+TABLE.mainTable TR:nth-child(odd){
+	/*background-color: #FFFF80;*/
+}
+
+TABLE.mainTable TD {
+	border: 1px solid #9C9C9C;
+	height:15px;
+}
+
+TABLE.mainTable .lessonInfo TD {
+	border: 1px solid black;
+	height:15px;
+	display:none;
+}
+
+TABLE.ui-selectable-disabled {
+	opacity: 1.00;
+	filter:alpha(opacity=100);
+}
+
+#koushiName {
+	/*background-color: #CC5831;*/
+	background-color: #EE8060;
+	color: #660000;
+	font-weight: bold;
+	text-align: center;
+	font-size: 13px;
+	padding: 1px;
+}
+
+#menuWindow {
+	border: 5px solid white;
+	background: #FFFFA0;
+	display: none;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	width: 200px;
+	height: 200px;
+	/*margin-top: -50px;*/
+	/*margin-height: -50px;*/
+}
+
+#menuWindowOuter {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.00;
+	filter:alpha(opacity=0);
+}
+
+.dframe .ui-selecting {
+	background: #E0FFFF;
+}
+
+
+.dframe .ui-selected {
+	/*background: #4169E1;*/
+	/*color: #FFFFFF;*/
+}
+
+/******************************************************************************/
+
+TABLE.memoTable {
+	background-color: lightgoldenrodyellow;
+	border-collapse:collapse;
+//	width:60%;
+	padding:0px;
+	spacing:0px;
+}
+
+TABLE.memoTable TABLE {
+	border: 1px solid #9C9C9C;
+	padding:0px;
+	spacing:0px;
+}
+
+TABLE.memoTable TABLE TABLE {
+	border: 1px solid #9C9C9C;
+	border-radius: 5px;         /* CSS3 */
+	-moz-border-radius: 5px;    /* Firefox */
+	-webkit-border-radius: 5px; /* Safari,Chrome */
+}
+
+.memoTableTDTitle{
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+	font-size: 14px;
+}
+
+.memoTableTDButton{
+	color: #000000;
+	font-weight: bold;
+	text-align: right;
+	font-size: 14px;
+}
+
+.expandmemo{
+	display:none;
+}
+
+div#glayLayer{
+	display:none;
+	position:fixed;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	background:black;
+	filter:alpha(opacity=60);
+	opacity: 0.60;
+}
+* html div#glayLayer{
+	position:absolute;
+}
+
+#overLayer{
+	display:none;
+	position: fixed;
+	top:5%;
+	left:5%;
+//	margin-top:-244px;
+//	margin-left:-160px;
+}
+* html #overLayer{
+	position: absolute;
+}
+
+.closeBtn {
+	width:15px;
+	background-color: #CC5831;
+}
+
+#closeBtnObj {
+	font-size: 12px;
+	font-weight: bold;
+	position:relative;
+	left:0px
+}
